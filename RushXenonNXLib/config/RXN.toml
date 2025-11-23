@@ -1,0 +1,160 @@
+[main]
+file_path = "../private/default.xex"
+patch_file_path = "../private/default.xexp"
+patched_file_path = "../private/default_patched.xex"
+out_directory_path = "../../RushXenonNX/ppc/"
+switch_table_file_path = "RXN_switch_tables.toml"
+
+skip_lr = true
+skip_msr = true
+ctr_as_local = true
+xer_as_local = true
+reserved_as_local = true
+cr_as_local = true
+non_argument_as_local = true
+non_volatile_as_local = true
+
+restgprlr_14_address = 0x83772910
+savegprlr_14_address = 0x837728C0
+restfpr_14_address = 0x8377337C
+savefpr_14_address = 0x83773330
+restvmx_14_address = 0x837738C8
+savevmx_14_address = 0x83773630
+restvmx_64_address = 0x8377395C
+savevmx_64_address = 0x837736C4
+
+longjmp_address = 0x83778910
+setjmp_address = 0x83778C30
+
+functions = [
+    { address = 0x8223A078, size = 0x138 },
+    { address = 0x8223A578, size = 0xE0 },
+    { address = 0x8223AAF0, size = 0x160 },
+    { address = 0x82252038, size = 0xA8 },
+    { address = 0x8225A680, size = 0x488 },
+    { address = 0x8228A498, size = 0x88 },
+    { address = 0x822F5730, size = 0x138 },
+    { address = 0x822F5BF8, size = 0xA0 },
+    { address = 0x82376C68, size = 0xB0 },
+    { address = 0x8237DBF8, size = 0x88 },
+    { address = 0x82381F70, size = 0x230 },
+    { address = 0x82382358, size = 0xD0 },
+    { address = 0x82383488, size = 0xC8 },
+    { address = 0x82385668, size = 0x290 },
+    { address = 0x824CCA18, size = 0x108 },
+    { address = 0x824E1DF8, size = 0xA0 },
+    { address = 0x824E2720, size = 0xC8 },
+    { address = 0x824F8590, size = 0x88 },
+    { address = 0x824F8E00, size = 0x68 },
+    { address = 0x82519348, size = 0x380 },
+    { address = 0x825B0B78, size = 0x70 },
+    { address = 0x825B24E8, size = 0x80 },
+    { address = 0x825FE558, size = 0x90 },
+    { address = 0x82602960, size = 0x648 },
+    { address = 0x826030F8, size = 0x230 },
+    { address = 0x82608D10, size = 0x90 },
+    { address = 0x82609380, size = 0x100 },
+    { address = 0x826094A8, size = 0xB8 },
+    { address = 0x8270DE98, size = 0xC0 },
+    { address = 0x82754708, size = 0x78 },
+    { address = 0x82754780, size = 0x70 },
+    { address = 0x82755920, size = 0x110 },
+    { address = 0x827B35B0, size = 0x110 },
+    { address = 0x827B36DC, size = 0x110 },
+    { address = 0x827B36C0, size = 0x98 },
+    { address = 0x827B4038, size = 0x1D0 },
+    { address = 0x827D9010, size = 0x80 },
+    { address = 0x82837B18, size = 0x98 },
+    { address = 0x82841008, size = 0xA0 },
+    { address = 0x82844F78, size = 0xC8 },
+    { address = 0x8284BB80, size = 0x148 },
+    { address = 0x8284C458, size = 0xD0 },
+    { address = 0x8284CB68, size = 0x68 },
+    { address = 0x8284CE10, size = 0xB8 },
+    { address = 0x8284D020, size = 0x78 },
+    { address = 0x82863288, size = 0x228 },
+    { address = 0x829438B0, size = 0x98 },
+    { address = 0x829961E0, size = 0x68 },
+    { address = 0x82998938, size = 0x190 },
+    { address = 0x829CC530, size = 0x1A0 },
+    { address = 0x829D6958, size = 0xB0 },
+    { address = 0x829FBC30, size = 0x90 },
+    { address = 0x82A7A740, size = 0x328 },
+    { address = 0x82A7ACB0, size = 0xB0 },
+    { address = 0x82A7B1C0, size = 0x90 },
+    { address = 0x82A7BF48, size = 0x90 },
+    { address = 0x82AA1A20, size = 0xD8 },
+    { address = 0x82B58B80, size = 0xD8 },
+    { address = 0x82B58C18, size = 0x70 },
+    { address = 0x82B58FB8, size = 0x110 },
+    { address = 0x82B95F10, size = 0x160 },
+    { address = 0x82C6E690, size = 0xC8 },
+    { address = 0x82CC7090, size = 0x88 },
+    { address = 0x82CC7118, size = 0xA8 },
+    { address = 0x82CC9FA0, size = 0x60 },
+    { address = 0x82CCA000, size = 0x68 },
+    { address = 0x82CCFA38, size = 0x4E8 },
+    { address = 0x82D72A20, size = 0x160 },
+    { address = 0x82DE62F0, size = 0x90 },
+    { address = 0x82DEAEC0, size = 0x178 },
+    { address = 0x82ED9318, size = 0x168 },
+    { address = 0x82EDA3A0, size = 0xC0 },
+    { address = 0x82EDE5A0, size = 0x420 },
+    { address = 0x82FB23C0, size = 0x270 },
+    { address = 0x82FB2AB8, size = 0x2C8 },
+    { address = 0x82FB2D80, size = 0xD0 },
+    { address = 0x82FB2E50, size = 0xF0 },
+    { address = 0x82FBC218, size = 0x1A0 },
+    { address = 0x82FBD700, size = 0x1E8 },
+    { address = 0x830115F0, size = 0x70 },
+    { address = 0x830149E8, size = 0x100 },
+    { address = 0x83014DB0, size = 0x90 },
+    { address = 0x83015038, size = 0xE8 },
+    { address = 0x83015120, size = 0xC8 },
+    { address = 0x8302F750, size = 0xE0 },
+    { address = 0x830DC6A0, size = 0x1F8 },
+    { address = 0x8317A808, size = 0x98 },
+    { address = 0x831B4F38, size = 0xB8 },
+    { address = 0x831EAE20, size = 0xC0 },
+    { address = 0x832427E0, size = 0x470 },
+    { address = 0x83243068, size = 0x80 },
+    { address = 0x832430E8, size = 0x78 },
+    { address = 0x832466A8, size = 0xA8 },
+    { address = 0x83248470, size = 0x230 },
+    { address = 0x83248A70, size = 0xB0 },
+    { address = 0x8324A9D8, size = 0x120 },
+    { address = 0x8324B218, size = 0x1C8 },
+    { address = 0x832511A8, size = 0x128 },
+    { address = 0x83255038, size = 0x3C0 },
+    { address = 0x832B6370, size = 0x88 },
+    { address = 0x832B6E98, size = 0x2D8 },
+    { address = 0x832BC200, size = 0x180 },
+    { address = 0x832C8408, size = 0x128 },
+    { address = 0x832CFCC8, size = 0x120 },
+    { address = 0x832CFDE8, size = 0x98 },
+    { address = 0x832E8688, size = 0xD8 },
+    { address = 0x832E8760, size = 0x268 },
+    { address = 0x8338CA30, size = 0x928 },
+    { address = 0x83395F70, size = 0xB8 },
+    { address = 0x8342D508, size = 0x78 },
+    { address = 0x8353F628, size = 0x2B0 },
+    { address = 0x8355EAD0, size = 0x70 },
+    { address = 0x83630570, size = 0x188 },
+    { address = 0x837111D0, size = 0x3F8 },
+    { address = 0x83711678, size = 0x1E8 },
+    { address = 0x8377D8B8, size = 0x960 },
+    { address = 0x837F92D8, size = 0x270 },
+    { address = 0x83802CD8, size = 0x478 },
+    { address = 0x8380F7C8, size = 0x2A8 },
+    { address = 0x82FB37B0, size = 0x38 },
+    { address = 0x822480A0, size = 0xB0 },
+    { address = 0x837869C0, size = 0x438 },
+    { address = 0x82C83630, size = 0x30 },
+    { address = 0x83776230, size = 0x190 },
+    { address = 0x83780100, size = 0x90 },
+]
+
+invalid_instructions = [
+    { data = 0x00000000, size = 4 }, # Padding
+    { data = 0x83776228, size = 8 }, # idk
+]

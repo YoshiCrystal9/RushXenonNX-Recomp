@@ -1,0 +1,15 @@
+[submodule "extern/simde"]
+	path = extern/simde
+	url = https://github.com/simd-everywhere/simde.git
+[submodule "extern/imgui"]
+	path = extern/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "extern/stb"]
+	path = extern/stb
+	url = https://github.com/nothings/stb.git
+[submodule "extern/o1heap"]
+	path = extern/o1heap
+	url = https://github.com/pavel-kirienko/o1heap
+[submodule "extern/libmspack"]
+	path = extern/libmspack
+	url = https://github.com/kyz/libmspack.git
